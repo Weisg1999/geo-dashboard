@@ -1,0 +1,15 @@
+# 依赖与构建产物
+node_modules/
+.build/
+
+# 验证工作区（无头浏览器 profile / 截图 / 探针脚本产物）
+.verify/
+
+# 单文件版为构建输出，仓库保留源码即可（如需分发请附 release）
+GeoDash-v2-单文件版.html
+
+# 系统与编辑器
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
