@@ -1,5 +1,7 @@
 # GeoDash v2 · 项目分布 3D 数字大屏
 
+[English README](./README.en.md)
+
 融合两个项目的长处重做的新版：**[vasturiano/three-globe](https://github.com/vasturiano/three-globe) 的地球视觉**（夜景贴图、大气辉光、球面板块过渡动画、星空）+ **v1（geo-dashboard）完整的大屏功能**（省→市→项目三级下钻、悬停/选中/压暗三态、搜索、飞入相机动画、面板联动、十段线与南海诸岛合规要素、自适应画质）。
 
 零构建、零运行时依赖：three 与 three-globe 等 31 个包已全部本地化到 `vendor/`，内网离线可用。
@@ -30,7 +32,7 @@ main.js         入口：启动编排 + 渲染主循环 + FPS 自适应降级
  ├ globe.js     渲染器/相机/OrbitControls/CSS2D 层/ThreeGlobe 实例/星空
  ├ state.js     全局可变状态单一数据源 + 三态目标值 + 作用域集合
  ├ admin.js     数据加载与缓存、省级/市级板块图层、十段线、角标、大洲标注、数学拾取
- ├ markers.js   项目光柱/光晕（billboard shader）、飞线、选中光环
+ ├ markers.js   项目光点（光晕+亮芯+脉冲环精灵）、飞线、选中光环
  ├ panels.js    左右面板/排行/环图/列表/面包屑/tooltip（与 v1 完全一致）
  └ interaction.js  悬停/点选/搜索/飞行/自转/灵敏度/纯净模式
 ```
